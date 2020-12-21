@@ -6,8 +6,10 @@ import (
 )
 
 func main() {
-	nums := []int{8, 1, 2, 2, 3}
-	fmt.Print(smallerNumbersThanCurrent(nums))
+	nums := [][]int{{8, 1, 2, 2, 3}, {6, 5, 4, 8}, {7, 7, 7, 7}}
+	for _, data := range nums {
+		fmt.Println(smallerNumbersThanCurrent(data))
+	}
 }
 
 type pair struct {
